@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #0066cc;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 0.5rem;
+        }
+
+        .project-card, .blog-card {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project-card:last-child, .blog-card:last-child {
+            border-bottom: none;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .view-all {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .view-all:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: white;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .social-links a:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p class="tagline">Developer & Creator</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I'm a developer passionate about building things and sharing what I learn. This is where I showcase my projects and write about my experiences.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            
+            <div class="project-card">
+                <h3>Project Name</h3>
+                <p>A brief description of what this project does and the technologies used to build it.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Another Project</h3>
+                <p>Another interesting project you've been working on with a quick overview of its purpose.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Third Project</h3>
+                <p>Description of your third project and what makes it noteworthy.</p>
+            </div>
+
+            <a href="projects.html" class="view-all">View all projects →</a>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Posts</h2>
+            
+            <div class="blog-card">
+                <div class="date">December 1, 2024</div>
+                <h3>Blog Post Title</h3>
+                <p>A short excerpt or summary of your latest blog post to give readers a preview of what it's about.</p>
+            </div>
+
+            <div class="blog-card">
+                <div class="date">November 15, 2024</div>
+                <h3>Another Post Title</h3>
+                <p>Brief description of another blog post you've written recently.</p>
+            </div>
+
+            <a href="blog.html" class="view-all">Read all posts →</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
