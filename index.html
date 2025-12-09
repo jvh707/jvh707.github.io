@@ -3,77 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Jenna Schmitt - Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Your Name</h1>
-            <p class="tagline">Developer & Creator</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div class="nav-content">
+                <a href="index.html" class="logo">JS</a>
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <!-- <a href="blog.html">Blog</a> -->
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome! I'm a developer passionate about building things and sharing what I learn. This is where I showcase my projects and write about my experiences.</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Jenna Schmitt</h1>
+                    <p class="subtitle">Developer & Creator</p>
+                    <p>Simplify and Connect. Passionate about creating meaningful projects and exploring new technologies.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/jvh707" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/jenna-schmitt" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:jenna.a.schmitt@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://instagram.com/jenna.aven" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Recent Projects</h2>
-            
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>A brief description of what this project does and the technologies used to build it.</p>
-            </div>
+        <section>
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Recent work I'm proud of</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Weather predictor</h3>
+                        <p class="meta">Built with React, TypeScript, Node.js</p>
+                        <p>A full-stack application that solves a specific problem with an elegant user interface and robust backend.</p>
+                        <a href="projects.html" class="card-link">View project <i class="fas fa-arrow-right"></i></a>
+                    </div>
 
-            <div class="project-card">
-                <h3>Another Project</h3>
-                <p>Another interesting project you've been working on with a quick overview of its purpose.</p>
-            </div>
+                    <!-- <div class="card">
+                        <h3>Another Project</h3>
+                        <p class="meta">Built with Python, FastAPI, PostgreSQL</p>
+                        <p>An API service that processes data efficiently and provides real-time analytics to users.</p>
+                        <a href="projects.html" class="card-link">View project <i class="fas fa-arrow-right"></i></a>
+                    </div>
 
-            <div class="project-card">
-                <h3>Third Project</h3>
-                <p>Description of your third project and what makes it noteworthy.</p>
-            </div>
+                    <div class="card">
+                        <h3>Creative Solution</h3>
+                        <p class="meta">Built with Vue.js, D3.js, Firebase</p>
+                        <p>An interactive data visualization platform that makes complex information accessible and engaging.</p>
+                        <a href="projects.html" class="card-link">View project <i class="fas fa-arrow-right"></i></a>
+                    </div>
 
-            <a href="projects.html" class="view-all">View all projects →</a>
+                    <div class="card">
+                        <h3>Open Source Tool</h3>
+                        <p class="meta">Built with Go, Docker, Kubernetes</p>
+                        <p>A developer tool that streamlines workflows and has been adopted by teams worldwide.</p>
+                        <a href="projects.html" class="card-link">View project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div> -->
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="projects.html" class="btn">View all projects</a>
+                </div>
+            </div>
         </section>
 
-        <section id="blog">
-            <h2>Latest Posts</h2>
-            
-            <div class="blog-card">
-                <div class="date">December 1, 2024</div>
-                <h3>Blog Post Title</h3>
-                <p>A short excerpt or summary of your latest blog post to give readers a preview of what it's about.</p>
-            </div>
+        <!-- <section>
+            <div class="container">
+                <h2 class="section-title">Latest Writing</h2>
+                <p class="section-subtitle">Thoughts on development, technology, and learning</p>
+                
+                <div class="card">
+                    <h3>My Journey Learning Rust</h3>
+                    <p class="meta">November 15, 2024 · 7 min read</p>
+                    <p>Reflections on diving into systems programming and what I learned along the way.</p>
+                    <a href="posts/learning-rust.html" class="card-link">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
 
-            <div class="blog-card">
-                <div class="date">November 15, 2024</div>
-                <h3>Another Post Title</h3>
-                <p>Brief description of another blog post you've written recently.</p>
-            </div>
+                <div class="card">
+                    <h3>Building Scalable Applications</h3>
+                    <p class="meta">December 1, 2024 · 5 min read</p>
+                    <p>Exploring architectural patterns and best practices for creating applications that grow with your user base.</p>
+                    <a href="posts/building-scalable-apps.html" class="card-link">Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
 
-            <a href="blog.html" class="view-all">Read all posts →</a>
-        </section>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="blog.html" class="btn btn-secondary">View all posts</a>
+                </div>
+            </div>
+        </section> -->
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
-            </div>
+            <p>&copy; 2025 Jenna Schmitt. Built with passion.</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://github.com/jvh707">GitHub</a> · 
+                <a href="https://linkedin.com/in/jenna-schmitt">LinkedIn</a> · 
+                <a href="mailto:jenna.a.schmitt@gmail.com">Email</a>
+            </p>
         </div>
     </footer>
 </body>
